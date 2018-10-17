@@ -1,0 +1,33 @@
+package AdventsKalenderPlugin;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Adventskalender extends JavaPlugin{
+	
+	@Override
+	public void onEnable() {
+		super.onEnable();
+		PluginManager pm = getServer().getPluginManager();
+		this.getCommand("adventskalender").setExecutor(this);
+		pm.registerEvents((Listener) this, this);
+	}
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+		
+		Player player;
+		if(sender instanceof Player) {
+			player = (Player) sender;
+			player.getInventory().addItem(new ItemStack(Material.CHEST, 1));
+			
+		}
+		return true;
+	}
+}

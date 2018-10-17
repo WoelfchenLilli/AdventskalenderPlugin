@@ -1,0 +1,10 @@
+name: Adventskalender
+version: 1.12.2
+main: AdventsKalenderPlugin.Adventskalender
+description: Adventskalender
+author: WoelfchenLilli
+commands:
+  adventskalender:
+    usage: /<command>
+    description: Testet die Funktionsfaehigkeit des Plugins    
+  

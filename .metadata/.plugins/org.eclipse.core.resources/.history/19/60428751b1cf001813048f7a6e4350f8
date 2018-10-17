@@ -1,0 +1,13 @@
+package AdventsKalenderPlugin;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Adventskalender extends JavaPlugin{
+	
+	@Override
+	public void onEnable() {
+		super.onEnable();
+		
+		System.out.println("Adventskalender, version 1.12.2 gelasen");
+	}
+}

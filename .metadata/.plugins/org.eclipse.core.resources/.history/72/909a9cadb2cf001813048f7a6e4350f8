@@ -1,0 +1,5 @@
+name: Adventskalender
+version: 1.12.2
+main: AdventskalenderPlugin.Adventskalender
+description: Adventskalender
+author: WoelfchenLilli
